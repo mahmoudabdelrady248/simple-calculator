@@ -6,7 +6,7 @@ class divide {
 
 	
 
-	private static final Float Error = null;
+	
 
 	@Test
 	void test() {
@@ -20,7 +20,7 @@ class divide {
 			assertEquals(-1.25, input.divide(-5, 4));
 			assertEquals(-1, input.divide(-5, 5));
 			assertEquals("ArithmeticException", input.divide(5, 0));
-		} catch (ArithmeticException e) {
+		} catch (Exception e) {
 			System.out.println(e.toString());
 		}
 	}
