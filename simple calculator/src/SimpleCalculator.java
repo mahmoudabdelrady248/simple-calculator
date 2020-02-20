@@ -4,12 +4,10 @@ public class SimpleCalculator {
 		int z=x+y;
 		return z;
 	}
-	public float divide(int x,int y) {
-		try {
-			float z=(float)x/y;
-			return z;
-		} catch (ArithmeticException e) {
-			throw new RuntimeException("Arithmetic Exception");
-		}
+	public float divide(int x,int y) throws RuntimeException{
+		if(y==0) 
+		throw new RuntimeException("ArithmeticException");
+		else
+			return (float)x/y;
 	}
   }
