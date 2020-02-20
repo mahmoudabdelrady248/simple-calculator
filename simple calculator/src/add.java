@@ -10,7 +10,7 @@ class add {
 		assertEquals(9, input.add(4, 5));
 		assertEquals(1, input.add(-4, 5));
 		assertEquals(-1, input.add(4, -5));
-		assertEquals(4, input.add(4, 0));
+		assertEquals(5, input.add(5, 0));
 	}
 
 }
